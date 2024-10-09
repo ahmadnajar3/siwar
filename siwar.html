@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة Siwar</title>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* الأنميشن */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        header {
+            background-color: #2ecc71; /* لون أخضر جذاب */
+            padding: 40px 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 48px;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            text-align: center;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .product-info {
+            padding: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .product-name {
+            font-size: 24px;
+            margin: 10px 0;
+            color: #2ecc71;
+        }
+
+        .product-price {
+            font-size: 20px;
+            color: #e74c3c;
+            margin: 10px 0;
+        }
+
+        .product-type {
+            font-size: 18px;
+            color: #555;
+        }
+
+        footer {
+            background-color: #2ecc71;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* أنميشن على دخول المنتجات */
+        .product-card {
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>شركة Siwar</h1>
+    </header>
+
+    <div class="container">
+        <h2 style="text-align: center;">منتجاتنا</h2>
+        <div class="product-grid">
+            <!-- المنتج الأول -->
+            <div class="product-card">
+                <img src="1.jpg" alt="منتج 1">
+                <div class="product-info">
+                    <div class="product-name">عسل اليانسون</div>
+                    <div class="product-price">السعر: $100</div>
+                    <div class="product-type">النوع: عسليات</div>
+                </div>
+            </div>
+             <!-- المنتج الأول -->
+             <div class="product-card">
+                <img src="1.jpg" alt="منتج 1">
+                <div class="product-info">
+                    <div class="product-name">عسل اليانسون</div>
+                    <div class="product-price">السعر: $100</div>
+                    <div class="product-type">النوع: عسليات</div>
+                </div>
+            </div>
+             <!-- المنتج الأول -->
+             <div class="product-card">
+                <img src="1.jpg" alt="منتج 1">
+                <div class="product-info">
+                    <div class="product-name">عسل اليانسون</div>
+                    <div class="product-price">السعر: $100</div>
+                    <div class="product-type">النوع: عسليات</div>
+                </div>
+            </div>
+             <!-- المنتج الأول -->
+             <div class="product-card">
+                <img src="1.jpg" alt="منتج 1">
+                <div class="product-info">
+                    <div class="product-name">عسل اليانسون</div>
+                    <div class="product-price">السعر: $100</div>
+                    <div class="product-type">النوع: عسليات</div>
+                </div>
+            </div>
+             <!-- المنتج الأول -->
+             <div class="product-card">
+                <img src="1.jpg" alt="منتج 1">
+                <div class="product-info">
+                    <div class="product-name">عسل اليانسون</div>
+                    <div class="product-price">السعر: $100</div>
+                    <div class="product-type">النوع: عسليات</div>
+                </div>
+            </div>
+             <!-- المنتج الأول -->
+             <div class="product-card">
+                <img src="1.jpg" alt="منتج 1">
+                <div class="product-info">
+                    <div class="product-name">عسل اليانسون</div>
+                    <div class="product-price">السعر: $100</div>
+                    <div class="product-type">النوع: عسليات</div>
+                </div>
+            </div>
+             <!-- المنتج الأول -->
+             <div class="product-card">
+                <img src="1.jpg" alt="منتج 1">
+                <div class="product-info">
+                    <div class="product-name">عسل اليانسون</div>
+                    <div class="product-price">السعر: $100</div>
+                    <div class="product-type">النوع: عسليات</div>
+                </div>
+            </div>
+             <!-- المنتج الأول -->
+             <div class="product-card">
+                <img src="1.jpg" alt="منتج 1">
+                <div class="product-info">
+                    <div class="product-name">عسل اليانسون</div>
+                    <div class="product-price">السعر: $100</div>
+                    <div class="product-type">النوع: عسليات</div>
+                </div>
+            </div>
+             <!-- المنتج الأول -->
+             <div class="product-card">
+                <img src="1.jpg" alt="منتج 1">
+                <div class="product-info">
+                    <div class="product-name">عسل اليانسون</div>
+                    <div class="product-price">السعر: $100</div>
+                    <div class="product-type">النوع: عسليات</div>
+                </div>
+            </div>
+             <!-- المنتج الأول -->
+             <div class="product-card">
+                <img src="1.jpg" alt="منتج 1">
+                <div class="product-info">
+                    <div class="product-name">عسل اليانسون</div>
+                    <div class="product-price">السعر: $100</div>
+                    <div class="product-type">النوع: عسليات</div>
+                </div>
+            </div>
+             <!-- المنتج الأول -->
+             <div class="product-card">
+                <img src="1.jpg" alt="منتج 1">
+                <div class="product-info">
+                    <div class="product-name">عسل اليانسون</div>
+                    <div class="product-price">السعر: $100</div>
+                    <div class="product-type">النوع: عسليات</div>
+                </div>
+            </div>
+             <!-- المنتج الأول -->
+             <div class="product-card">
+                <img src="1.jpg" alt="منتج 1">
+                <div class="product-info">
+                    <div class="product-name">عسل اليانسون</div>
+                    <div class="product-price">السعر: $100</div>
+                    <div class="product-type">النوع: عسليات</div>
+                </div>
+            </div>
+             <!-- المنتج الأول -->
+             <div class="product-card">
+                <img src="1.jpg" alt="منتج 1">
+                <div class="product-info">
+                    <div class="product-name">عسل اليانسون</div>
+                    <div class="product-price">السعر: $100</div>
+                    <div class="product-type">النوع: عسليات</div>
+                </div>
+            </div>
+             <!-- المنتج الأول -->
+             <div class="product-card">
+                <img src="1.jpg" alt="منتج 1">
+                <div class="product-info">
+                    <div class="product-name">عسل اليانسون</div>
+                    <div class="product-price">السعر: $100</div>
+                    <div class="product-type">النوع: عسليات</div>
+                </div>
+            </div>
+             <!-- المنتج الأول -->
+             <div class="product-card">
+                <img src="1.jpg" alt="منتج 1">
+                <div class="product-info">
+                    <div class="product-name">عسل اليانسون</div>
+                    <div class="product-price">السعر: $100</div>
+                    <div class="product-type">النوع: عسليات</div>
+                </div>
+            </div>
+
+         <!--  المنتج الثاني 
+            <div class="product-card">
+                <img src="product2.jpg" alt="منتج 2">
+                <div class="product-info">
+                    <div class="product-name">اسم المنتج 2</div>
+                    <div class="product-price">السعر: $150</div>
+                    <div class="product-type">النوع: ملابس</div>
+                </div>
+            </div>
+
+             المنتج الثالث 
+            <div class="product-card">
+                <img src="product3.jpg" alt="منتج 3">
+                <div class="product-info">
+                    <div class="product-name">اسم المنتج 3</div>
+                    <div class="product-price">السعر: $200</div>
+                    <div class="product-type">النوع: أثاث</div>
+                </div>
+            </div> --> 
+        </div>
+    </div>
+
+    <footer>
+        <p>حقوق الطبع والنشر © 2024 شركة Siwar. جميع الحقوق محفوظة.</p>
+    </footer>
+
+</body>
+</html>
